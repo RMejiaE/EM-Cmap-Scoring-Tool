@@ -12,3 +12,5 @@ Here you will find the different codes for each of the block presented in the fu
 ### Graphical User Interface (GUI)
 The code for the main interface with the user. It allows the user to choose from two scoring methods (i.e., traditional or categorical), write down a root concept, file selection, and a path selection to save the results.
 It also includes a *Help*, *Run*, and *Exit* buttons.
+### Scoring Methods
+Each scoring method will run independently under the GUI and will generate a *ScoringResult* file in the path selected by the user.
