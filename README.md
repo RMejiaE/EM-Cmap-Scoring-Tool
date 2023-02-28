@@ -3,6 +3,7 @@ Repository containing the design documents and results for the Entrepreneurial M
 ## Developers
 - Martha Lucía Cano Morales
 - Eduardo Rodríguez Mejía
+
 # Description:
 The following repository contains the documentation and the codes for running and working with the EM Cmap Scoring Tool.
 ##  Conception
@@ -14,7 +15,13 @@ The code for the main interface with the user. It allows the user to choose from
 It also includes a *Help*, *Run*, and *Exit* buttons.
 ### Scoring Methods
 Each scoring method will run independently under the GUI and will generate a *ScoringResult* file in the path selected by the user.
+
 # How to Use the EM Cmap Scoring Tool
+## Download the *Cmap_Scoring_Tool_Launcher.zip* file and then:
+1. Extract it on your computer.
+2. Open the *Cmap_Scoring_Tool_Launcher* folder
+3. Run the **Cmap_Scoring_Tool_Launcher** executable file.
+## With the **EM Cmap Scoring Tool** runing
 ### Please open "Cmap Tools" and check the following:
 - Check for misspellings via *Tools* -> *Spelling...*.
 - Check for hierarchical structure via *Format* -> *Autolayout*.
