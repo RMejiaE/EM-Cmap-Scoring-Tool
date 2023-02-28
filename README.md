@@ -22,6 +22,7 @@ Each scoring method will run independently under the GUI and will generate a *Sc
 2. Open the *Cmap_Scoring_Tool_Launcher* folder
 3. Run the **Cmap_Scoring_Tool_Launcher** executable file.
 ## With the **EM Cmap Scoring Tool** runing
+![alt text](https://www.markdownguide.org/assets/images/tux.png)
 ### Please open "Cmap Tools" and check the following:
 - Check for misspellings via *Tools* -> *Spelling...*.
 - Check for hierarchical structure via *Format* -> *Autolayout*.
