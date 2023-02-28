@@ -1,7 +1,7 @@
 # EM-Cmap-Scoring-Tool
 Repository containing the design documents and results for the Entrepreneurial Mindset Scoring Tool
 # Developers
-- Martha L. Cano Morales
+- Martha Lucía Cano Morales
 - Eduardo Rodríguez Mejía
 # Description:
 The following repository contains the documentation and the codes for running and working with the EM Cmap Scoring Tool.
