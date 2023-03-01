@@ -1,4 +1,4 @@
-# Entrepreneural Mindset Concept Map Scoring Tool
+# Entrepreneural Mindset Concept Map Scoring Tool :smile:
 ## Developers
 - Martha Lucía Cano Morales casi Ph.D
 - Eduardo Rodríguez Mejía todo un Hp 😄
