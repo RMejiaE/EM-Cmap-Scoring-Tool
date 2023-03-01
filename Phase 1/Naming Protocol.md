@@ -12,8 +12,8 @@ Variables will follow the template presented below following table 1 rules:
  
  ### Table 1: Identifiers for variables names
 | ID	| Scope |	Type |	Underscore |	name |
-|:-----:|:-------:|------|:-------------:|-------|
-|  v | Loc |	L(ist) |	_	| var_1 |
+|:-----:|:-------:|:------:|:-------------:|-------|
+|  v(ariable) | Loc |	L(ist) |	_	| var_1 |
 |   |	Glo	| T(uple) |	_	| var_2 |
 |   |		| C(har) |	_	| var_3 |
 |   |		| F(loat) |	_ |	var_4 |
@@ -24,7 +24,7 @@ Variables will follow the template presented below following table 1 rules:
 
 Functions will follow the template presented below:
 
-*fScopeType_name()*
+*f_name()*
 
 **e.g., f_inputfiles()**
 
