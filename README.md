@@ -1,5 +1,5 @@
-# Entrepreneural Mindset Concept Map Scoring Tool :smile:
-## Developers
+# 💻 Entrepreneural Mindset Concept Map Scoring Tool
+## Developers :
 - Martha Lucía Cano Morales casi Ph.D
 - Eduardo Rodríguez Mejía todo un Hp 😄
 # Description
@@ -9,7 +9,7 @@ For [Phase 1](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase%20
 
 For naming protocol within the code, please refer to the [Naming Protocol](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/blob/main/Phase%201/Naming%20Protocol.md) documentation.
 
-# Theoretical Framework
+# :scroll: Theoretical Framework
 ![imagen](https://user-images.githubusercontent.com/78668372/222168066-8f58282b-3591-43e3-a3ed-1d50a78556a4.png)
 
 Figure 1: Cmap example[1]
@@ -25,5 +25,5 @@ This method first categorizes the concepts into categories and then identifies t
 CO = NC*(NIL/NCAT)
 
 On Figure 1, each concept would be assigned a number depending on the category for the NC and NCAT calculation, and them the connection between **Foundations** and **Floor** would be checked to see if the two concepts are from different categories.
-# References
+# 📑 References
 1. Watson MK, Barrella E, Pelkey J. Assessment of conceptual knowledge using a component-based concept map scoring program. The International journal of engineering education. 2018;34(3):1025-1037.
