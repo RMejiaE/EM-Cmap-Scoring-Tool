@@ -1,51 +1,24 @@
-# EM-Cmap-Scoring-Tool
-![imagen](https://user-images.githubusercontent.com/78668372/221963257-b3bbdacd-f424-4e56-be69-029b855b9072.png)
-Repository containing the design documents and results for the Entrepreneurial Mindset Scoring Tool
+# Entrepreneural Mindset Concept Map Scoring Tool
 ## Developers
 - Martha Lucía Cano Morales
 - Eduardo Rodríguez Mejía
-# How to Use the EM Cmap Scoring Tool
-## Download the *Cmap_Scoring_Tool_Launcher.zip* file and then:
-1. Extract it on your computer.
-2. Open the *Cmap_Scoring_Tool_Launcher* folder
-3. Run the **Cmap_Scoring_Tool_Launcher** executable file.
-## Before going to the EM Cmap Scoring Tool
-### Please open "Cmap Tools" and check the following:
-- Check for misspellings via *Tools* -> *Spelling...*.
+# Description
+The Entrepreneurial Mindset (EM) Concept Map (Cmap) Scoring Tool will allow you to score a concept map base on either a Traditional or Categorical assessment method. The Concept EM is the default option for the tool, and a list of categories with its associated concepts is preinstalled in the software directories for the addecuate comparisons and calculations.
+# Theoretical Framework
+![imagen](https://user-images.githubusercontent.com/78668372/222168066-8f58282b-3591-43e3-a3ed-1d50a78556a4.png)
 
-![imagen](https://user-images.githubusercontent.com/78668372/221964846-c655a7e2-d452-4543-b340-7428eea1434c.png)
-- Check for hierarchical structure via *Format* -> *Autolayout*.
+Figure 1: Cmap example[1]
+## Traditional Scoring Method
+This method assigns a score based on the number of concepts (NC), the number of hierarchies (NH), the highest hierarchy (HH), and the number of cross links (NCL)between concepts.
 
-![imagen](https://user-images.githubusercontent.com/78668372/221965003-987d1b4c-d158-44f0-8a19-e9336c4b3551.png)
-- Check that all concepts are in a concept bubble in one line.
-	- The spelling should be the same throughout the maps that will be scored.
-- Save the revised Cmaps as .cxl files via *File* -> *Export Cmap As* -> *CXL File...*.
+As seen in Figure 1, the NC is the ammount of bubbles, the NH are the different paths that leave the root concept, the HH is the hierarchy containing most concepts, and the NCL are the connections between concepts of different hierarchies.
 
-![imagen](https://user-images.githubusercontent.com/78668372/221965129-f3d74c2d-c51c-4df2-8f51-24a8bd7a3c41.png)
-## Using EM Cmap Scoring Tool:
-### With the **EM Cmap Scoring Tool** runing
-1. Select the scoring method. You can choose either **Traditional** or **Categorical**.
+Score = (NC) + 5*(HH) + 10*(NCL)
+## Categorical Scoring Method
+This method first categorizes the concepts into categories and then identifies the number of categories (NC) present in the Cmap, then it calculates the number of concepts in each category to finally compute the number of categories (NCAT) that contain at least one concept. After that, it calculates the number of  connections between concepts of different categories, better known as interlinks (NIL). The score is meassure by the level of complexity (CO) of the Cmap.
 
-![imagen](https://user-images.githubusercontent.com/78668372/221965609-60028709-4a5a-4210-aa15-98f0a5f1c451.png)
+CO = NC*(NIL/NCAT)
 
-2. Write down the root concept that will be used as the starting node for the calculations.
-![imagen](https://user-images.githubusercontent.com/78668372/221965860-63296871-9595-4361-8268-8bd398952d6a.png)
-3. Select the .cxl files for scoring.
-![imagen](https://user-images.githubusercontent.com/78668372/221965947-a66c685b-1698-4db5-bb8e-8329a9206087.png)
-![imagen](https://user-images.githubusercontent.com/78668372/221966966-51ff35f5-2ae9-4d29-984a-7f825f888fee.png)
-4. Select the path for the results report and rename the file if you wish to. Results will be exported as .CVS.
-![imagen](https://user-images.githubusercontent.com/78668372/221967024-b1dba369-0870-4922-a08e-3a0583c78603.png)
-![imagen](https://user-images.githubusercontent.com/78668372/221967154-3c928bfc-49c7-405f-a1f1-37006ab02380.png)
-5. Click the "Run" button and then open the results report.
-![imagen](https://user-images.githubusercontent.com/78668372/221967275-ff384e7b-64ff-41aa-8f13-d844ca9d9717.png)
-# Description:
-The following repository contains the documentation and the codes for running and working with the EM Cmap Scoring Tool.
-##  Conception
-Here you will find the requirements for the sotfware and the functional block diagram of the solution.
-## Planning
-Here you will find the different codes for each of the block presented in the functional block diagram.
-### Graphical User Interface (GUI)
-The code for the main interface with the user. It allows the user to choose from two scoring methods (i.e., traditional or categorical), write down a root concept, file selection, and a path selection to save the results.
-It also includes a *Help*, *Run*, and *Exit* buttons.
-### Scoring Methods
-Each scoring method will run independently under the GUI and will generate a *ScoringResult* file in the path selected by the user.
+On Figure 1, each concept would be assigned a number depending on the category for the NC and NCAT calculation, and them the connection between **Foundations** and **Floor** would be checked to see if the two concepts are from different categories.
+# References
+1. Watson MK, Barrella E, Pelkey J. Assessment of conceptual knowledge using a component-based concept map scoring program. The International journal of engineering education. 2018;34(3):1025-1037.
