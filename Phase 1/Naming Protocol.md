@@ -12,7 +12,7 @@ Variables will follow the template presented below following table 1 rules:
  
  ### Table 1: Identifiers for variables names
 | ID	| Scope |	Type |	Underscore |	name |
-|-----|-------|------|-------------|-------|
+|:-----:|:-------:|------|:-------------:|-------|
 |  v | Loc |	L(ist) |	_	| alpha |
 |   |	Glo	| T(uple) |	_	| bravo |
 |   |		| C(har) |	_	| charlie |
