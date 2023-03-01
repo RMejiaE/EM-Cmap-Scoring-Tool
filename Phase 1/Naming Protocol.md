@@ -15,7 +15,7 @@ Variables will follow the template presented below following table 1 rules:
 |:-----:|:-------:|:------:|:-------------:|-------|
 |  v(ariable) | Loc |	L(ist) |	_	| var_1 |
 |   |	Glo	| T(uple) |	_	| var_2 |
-|   |		| C(har) |	_	| var_3 |
+|   |	Ext	| C(har) |	_	| var_3 |
 |   |		| F(loat) |	_ |	var_4 |
 |   |		| I(nt) |	_ |	var_5 |
 |   |		| D(ictionary) |	_ |	var_6 |
