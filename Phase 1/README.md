@@ -1,5 +1,6 @@
 # Phase 1
 - Please go over the **EM_Cmap_Scoring_Tool_Launcher.zip** file, right-click and choose *Save link as* and save the file in your computer.
+  - Alternately, you can click on the **EM_Cmap_Scoring_Tool_Launcher.zip** and then clik on the *Download* option in the right part of the screen.
 - Under your computer folder, right-click **EM_Cmap_Scoring_Tool_Launcher.zip** and select *Extract all*.
 - Open the foler and double click on the **Cmap_Scoring_Tool_Launcher** to run the program.
 
