@@ -7,7 +7,7 @@ The Entrepreneurial Mindset (EM) Concept Map (Cmap) Scoring Tool will allow you 
 
 For [Phase 1](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase%201) please refere to the folder for instructions on how to download and use the EM Cmap Scoring Tool.
 
-For naming protocol within the code, please refer to the [Naming Protocol](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/blob/main/Phase%201/Names%20Protocol.md) documentation.
+For naming protocol within the code, please refer to the [Naming Protocol](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/blob/main/Phase%201/Naming%20Protocol.md) documentation.
 
 # Theoretical Framework
 ![imagen](https://user-images.githubusercontent.com/78668372/222168066-8f58282b-3591-43e3-a3ed-1d50a78556a4.png)
