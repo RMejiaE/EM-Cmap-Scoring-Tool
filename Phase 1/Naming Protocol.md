@@ -13,11 +13,12 @@ Variables will follow the template presented below following table 1 rules:
  ### Table 1: Identifiers for variables names
 | ID	| Scope |	Type |	Underscore |	name |
 |:-----:|:-------:|------|:-------------:|-------|
-|  v | Loc |	L(ist) |	_	| alpha |
-|   |	Glo	| T(uple) |	_	| bravo |
-|   |		| C(har) |	_	| charlie |
-|   |		| F(loat) |	_ |	delta |
-|   |		| I(nt) |	_ |	echo |
+|  v | Loc |	L(ist) |	_	| var_1 |
+|   |	Glo	| T(uple) |	_	| var_2 |
+|   |		| C(har) |	_	| var_3 |
+|   |		| F(loat) |	_ |	var_4 |
+|   |		| I(nt) |	_ |	var_5 |
+|   |		| D(ictionary) |	_ |	var_6 |
 
 **e.g., vGloL_concept**
 
