@@ -5,7 +5,7 @@
 # Description
 The Entrepreneurial Mindset (EM) Concept Map (Cmap) Scoring Tool will allow you to score a concept map base on either a Traditional or Categorical assessment method. The Concept EM is the default option for the tool, and a list of categories with its associated concepts is preinstalled in the software directories for the addecuate comparisons and calculations.
 
-For [Phase 1](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase1) please refere to the folder for instructions on how to download and use the EM Cmap Scoring Tool.
+For [Phase 1](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase%201) please refere to the folder for instructions on how to download and use the EM Cmap Scoring Tool.
 
 # Theoretical Framework
 ![imagen](https://user-images.githubusercontent.com/78668372/222168066-8f58282b-3591-43e3-a3ed-1d50a78556a4.png)
