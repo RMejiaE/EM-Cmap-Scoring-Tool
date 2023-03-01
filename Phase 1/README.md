@@ -5,7 +5,9 @@
 - Under your computer folder, right-click **EM_Cmap_Scoring_Tool_Launcher.zip** and select *Extract all*.
 - Open the foler and double click on the **Cmap_Scoring_Tool_Launcher** to run the program.
 
-For accesing the raw code, please entre the [Raw Code](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase%201/Raw%20Code) folder and donwload the files on your computer for editing.
+For viewing the raw code, please entre the [Raw Code](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase%201/Raw%20Code) folder.
+
+For editing the raw code, please donwload the files on the [Raw Code](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase%201/Raw%20Code) folder on your computer via right-click -> *Save link as*.
 
 ## Main program Graphical User Interphace (GUI) with:
 1. Text box to write the root concept.
