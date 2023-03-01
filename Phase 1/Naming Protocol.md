@@ -1,7 +1,7 @@
-# Naming protocol
+# ⚠️ Naming protocol
 The following document describes the rules for naming variables and functions, as well as some general good programming practices for presenting them in the code.
 
-# General rules:
+# 📝 General rules:
 -	All variables will be listed at the top of the program file, after the imports.
 -	Instances will be listed at the top, after variables.
 -	Functions prototypes will be listed at the top, after instances.
