@@ -1,6 +1,6 @@
-# Pahse 1
+# Phase 1
 Main program Graphical User Interphaze (GUI) with:
-1. Text box to write the rott concept.
+1. Text box to write the root concept.
 2. *Browse* button to select the Cmap files for scoring.
 3. *Browse* button to select the path where scoring report will be saved.
 4. Scoring method selection
