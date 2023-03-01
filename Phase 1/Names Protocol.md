@@ -1,4 +1,4 @@
-# Names protocol
+# Naming protocol
 The following document describes the rules for naming variables and functions, as well as some general good programming practices for presenting them in the code.
 
 # General rules:
