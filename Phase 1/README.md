@@ -1,4 +1,7 @@
 # Phase 1
+
+Please go over the **EM_Cmap_Scoring_Tool_Launcher.zip** file, right-click and choose *download as ...*
+
 Main program Graphical User Interphaze (GUI) with:
 1. Text box to write the root concept.
 2. *Browse* button to select the Cmap files for scoring.
