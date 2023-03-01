@@ -1,10 +1,13 @@
 # Phase 1
+## EM Cmap Scoring Tool
 - Please go over the **EM_Cmap_Scoring_Tool_Launcher.zip** file, right-click and choose *Save link as* and save the file in your computer.
   - Alternately, you can click on the **EM_Cmap_Scoring_Tool_Launcher.zip** and then clik on the *Download* option in the right part of the screen.
 - Under your computer folder, right-click **EM_Cmap_Scoring_Tool_Launcher.zip** and select *Extract all*.
 - Open the foler and double click on the **Cmap_Scoring_Tool_Launcher** to run the program.
 
-Main program Graphical User Interphaze (GUI) with:
+For accesing the raw code, please entre the [Raw Code](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase%201/Raw%20Code) folder and donwload the files on your computer for editing.
+
+## Main program Graphical User Interphace (GUI) with:
 1. Text box to write the root concept.
 2. *Browse* button to select the Cmap files for scoring.
 3. *Browse* button to select the path where scoring report will be saved.
