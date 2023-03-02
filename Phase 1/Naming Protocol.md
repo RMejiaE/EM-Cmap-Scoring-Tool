@@ -24,7 +24,13 @@ Variables will follow the template presented below following table 1 rules:
 
 Functions will follow the template presented below:
 
-*f_name()*
+*fscope_name()*
+
+ ### Table 2: Identifiers for function names
+| ID	| Scope |	Underscore |	name |
+|:-----:|:-------:|:-------------:|-------|
+|  f(unction) | Loc |	_	| function_1 |
+|   |	Ext |	_	| function_2 |
 
 **e.g., f_inputfiles()**
 
