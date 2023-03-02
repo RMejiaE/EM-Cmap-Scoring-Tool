@@ -3,11 +3,13 @@
 - Martha Lucía Cano Morales casi Ph.D 🇨🇴
 - Eduardo Rodríguez Mejía todo un Hp 😄 :colombia:
 # 📃 Description
-The Entrepreneurial Mindset (EM) Concept Map (Cmap) Scoring Tool will allow you to score a concept map base on either a Traditional or Categorical assessment method. The Concept EM is the default option for the tool, and a list of categories with its associated concepts is preinstalled in the software directories for the addecuate comparisons and calculations.
+The Entrepreneurial Mindset (EM) Concept Map (Cmap) Scoring Tool allows you to score a concept map using either a Traditional or Categorical assessment method. The default root concept is set to Entrepreneurial Mindset, but it can be changed to another root concept. For the Categorical assessment, a list of categories with its associated concepts is preinstalled in the software directories to be used when assessing the concepts maps. 
 
-For [Phase 1](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase%201) please refere to the folder for instructions on how to download and use the EM Cmap Scoring Tool.
+This project was divided into 5 phases. The files for each one are located in separated folders within this repository. 
 
-For naming protocol within the code, please refer to the [Naming Protocol](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/blob/main/Phase%201/Naming%20Protocol.md) documentation.
+The objective of [Phase 1](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase%201) was to develop the Graphical User Interface (GUI) of the scoring tool. Please refer to [Phase 1](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase%201) folder for instructions on how to download and use the EM Cmap Scoring Tool in this first phase.
+
+For future developers, it may be worth to review the [Naming Protocol](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/blob/main/Phase%201/Naming%20Protocol.md) that was used for this project.
 
 # 📚 Theoretical Framework
 ![imagen](https://user-images.githubusercontent.com/78668372/222168066-8f58282b-3591-43e3-a3ed-1d50a78556a4.png)
