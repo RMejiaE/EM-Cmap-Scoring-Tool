@@ -10,7 +10,7 @@ For future developers, the [Raw Code](https://github.com/RMejiaE/EM-Cmap-Scoring
 
 For editing the raw code, please donwload the files on the [Raw Code](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase%201/Raw%20Code) folder into your computer via right-click -> *Save link as*.
 
-## Main program Graphical User Interphace (GUI) with:
+## Graphical User Interface (GUI) 
 1. Text box to write the root concept.
 2. *Browse* button to select the Cmap files for scoring.
 3. *Browse* button to select the path where scoring report will be saved.
