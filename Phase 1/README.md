@@ -4,11 +4,11 @@ For naming protocol within the code, please refer to the [Naming Protocol](https
 - Please go over the **EM_Cmap_Scoring_Tool_Launcher.zip** file, right-click and choose *Save link as* and save the file in your computer.
   - Alternately, you can click on the [**EM_Cmap_Scoring_Tool_Launcher.zip**](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/blob/main/Phase%201/EM_Cmap_Scoring_Tool_Launcher.zip) and then clik on the *Download* option on the right side of the screen.
 - Under your computer folder, right-click **EM_Cmap_Scoring_Tool_Launcher.zip** and select *Extract all*.
-- Open the foler and double click on the **Cmap_Scoring_Tool_Launcher** to run the program.
+- Open the folder and double click on the **Cmap_Scoring_Tool_Launcher** to run the program.
 
-For viewing the raw code, please entre the [Raw Code](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase%201/Raw%20Code) folder.
+For future developers, the [Raw Code](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase%201/Raw%20Code) folder contains the originl .py files of this phase.
 
-For editing the raw code, please donwload the files on the [Raw Code](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase%201/Raw%20Code) folder on your computer via right-click -> *Save link as*.
+For editing the raw code, please donwload the files on the [Raw Code](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase%201/Raw%20Code) folder into your computer via right-click -> *Save link as*.
 
 ## Main program Graphical User Interphace (GUI) with:
 1. Text box to write the root concept.
