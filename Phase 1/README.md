@@ -13,6 +13,7 @@ For future developers, the [Raw Code](https://github.com/RMejiaE/EM-Cmap-Scoring
 <img width="563" alt="Captura de pantalla 2023-03-01 101322" src="https://user-images.githubusercontent.com/78668372/222183073-9f7afbb2-b3eb-47f7-8aef-485e7764fb37.png">
 Figure 1: EM Cmap Scoring tool GUI
 
+
 Figure 1 shows the GUI. The elements thah composed it are described below: 
 
 1. Text box to write the root concept.
