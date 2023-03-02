@@ -11,10 +11,10 @@ For future developers, the [Raw Code](https://github.com/RMejiaE/EM-Cmap-Scoring
 ## Graphical User Interface (GUI) 
 
 <img width="563" alt="Captura de pantalla 2023-03-01 101322" src="https://user-images.githubusercontent.com/78668372/222183073-9f7afbb2-b3eb-47f7-8aef-485e7764fb37.png">
-Figure 1: EM Cmap Scoring tool GUI
 
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Figure 1: EM Cmap Scoring tool GUI
 
-Figure 1 shows the GUI. The elements thah composed it are described below: 
+Figure 1 shows the GUI, it elements are described below: 
 
 1. Text box to write the root concept.
 2. *Browse* button to select the Cmap files for scoring.
