@@ -1,7 +1,7 @@
 # 💻 Entrepreneurial Mindset Concept Map Scoring Tool
 ## Developers :
-- Martha Lucía Cano Morales casi Ph.D 🇨🇴
-- Eduardo Rodríguez Mejía todo un Hp 😄 :colombia:
+- Martha Lucía Cano Morales 
+- Eduardo Rodríguez Mejía todo 
 # 📃 Description
 The Entrepreneurial Mindset (EM) Concept Map (Cmap) Scoring Tool allows you to score a concept map using either a Traditional or Categorical assessment method. The default root concept is set to Entrepreneurial Mindset, but it can be changed to another root concept. For the Categorical assessment, a list of categories with its associated concepts is preinstalled in the software directories to be used when assessing the concepts maps. 
 
