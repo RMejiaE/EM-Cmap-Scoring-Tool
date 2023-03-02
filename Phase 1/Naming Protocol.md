@@ -32,7 +32,7 @@ Functions will follow the template presented below:
 |  f(unction) | Loc |	_	| function_1 |
 |   |	Ext |	_	| function_2 |
 
-**e.g., f_inputfiles()**
+**e.g., fLoc_inputfiles()**
 
 ## Instances and Objects
 Instances will follow the template presented below:
