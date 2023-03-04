@@ -20,6 +20,7 @@ Variables will follow the template presented below following table 1 rules:
 |   |		| I(nt) |	_ |	var_5 |
 |   |  | S(tring) | _ | var_6 |
 |   |		| D(ictionary) |	_ |	var_7 |
+|   |  | M(atrix) | | _ | var_8 |
 
 **e.g., vGloL_concept**
 
