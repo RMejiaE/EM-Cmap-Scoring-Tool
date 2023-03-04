@@ -18,7 +18,8 @@ Variables will follow the template presented below following table 1 rules:
 |   |	Ext	| C(har) |	_	| var_3 |
 |   |		| F(loat) |	_ |	var_4 |
 |   |		| I(nt) |	_ |	var_5 |
-|   |		| D(ictionary) |	_ |	var_6 |
+|   |  | S(tring) | _ | var_6 |
+|   |		| D(ictionary) |	_ |	var_7 |
 
 **e.g., vGloL_concept**
 
