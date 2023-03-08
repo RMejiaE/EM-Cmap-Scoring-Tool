@@ -3,7 +3,7 @@ For naming protocol within the code, please refer to the [Naming Protocol](https
 ## Installing EM Cmap Scoring Tool
 - Please go over and click the [**EM_Cmap_Scoring_Tool_Launcher.zip**](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/blob/main/Phase%201/EM_Cmap_Scoring_Tool_Launcher.zip) at the top of this page, then clik on the *Download* option on the right side of the screen.
 - Under your computer folder, right-click **EM_Cmap_Scoring_Tool_Launcher.zip** and select *Extract all*.
-| <img width="563" alt="Captura de pantalla 2023-03-01 101322" src="https://user-images.githubusercontent.com/78668372/222183073-9f7afbb2-b3eb-47f7-8aef-485e7764fb37.png"> |
+| ![imagen](https://user-images.githubusercontent.com/78668372/223776969-f07bc721-ec6c-4edc-beee-e0263be39050.png) |
 | :-: |
 | Figure 1: .zip extraction procedure |
   - :warning: Please do not go diectly into the .zip folder
