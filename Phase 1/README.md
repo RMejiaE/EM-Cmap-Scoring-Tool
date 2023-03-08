@@ -5,7 +5,8 @@ For naming protocol within the code, please refer to the [Naming Protocol](https
 - Under your computer folder, right-click **EM_Cmap_Scoring_Tool_Launcher.zip** and select *Extract all*.
 | ![imagen](https://user-images.githubusercontent.com/78668372/223776969-f07bc721-ec6c-4edc-beee-e0263be39050.png) |
 | :-: |
-| Figure 1: .zip extraction procedure |
+| Figure 1: .zip extraction procedure (ACTUALIZAR)|
+
   - :warning: Please do not go diectly into the .zip folder
 - Open the folder and double click on the **Cmap_Scoring_Tool_Launcher** application file to run the program.
 - 
