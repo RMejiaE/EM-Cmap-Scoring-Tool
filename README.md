@@ -11,9 +11,7 @@ This project was divided into 5 phases. The files for each one are located in se
 ### :file_folder:Phase 1
 The objective of [Phase 1](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase%201) was to develop the Graphical User Interface (GUI) of the scoring tool. Please refer to [Phase 1](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase%201) folder for instructions on how to download and use the EM Cmap Scoring Tool in this first phase.
 ### :file_folder:Phase 2
-The objective of [Phase 2](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase%202) was to develop the algorithm for data extraction and the algorithms for identification of the different values needed for each scoring method (see below [Theoretical Framework](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool#-theoretical-framework)). Each scoring method was implemented in a different program file to be called by the main program (GUI) according to the user selection of the scoring method.
-
-All the extracted and classified information is saved in a .csv file to be read with a spreadsheet software tool like Excel or Google Sheets.
+The objective of [Phase 2](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase%202) was to develop the algorithm for data extraction and the algorithms for identifying the different values needed for each scoring method (see below [Theoretical Framework](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool#-theoretical-framework)). Each scoring method was implemented in a different program file to be called by the main program (GUI) according to the user selection of the scoring method. All the extracted and classified information is saved in a .csv file to be read with a spreadsheet software tool like Excel or Google Sheets. Please refer to [Phase 2](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase%202) folder for instructions on how to download and use the EM Cmap Scoring Tool in this second phase.
 
 ### :file_folder:Phase 3
 ### :file_folder:Phase 4
