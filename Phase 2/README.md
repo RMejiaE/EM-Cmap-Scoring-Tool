@@ -16,7 +16,7 @@ For naming protocol within the code, please refer to the [Naming Protocol](https
 | :-: | :-: |
 | Figure 2 a): Protection window (ACTUALIZAR) | Figure 2 b)): Running the application (ACTUALIZAR) |
 
-For future developers, the [Raw Code](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase%201/Raw%20Code) folder contains the originl .py files of this phase. For editing the raw code, please donwload the files on the [Raw Code](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase%201/Raw%20Code) folder into your computer via right-click -> *Save link as*.
+For future developers, the [Raw Code](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase%202/Raw%20Code) folder contains the originl .py files of this phase. For editing the raw code, please donwload the files on the [Raw Code](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase%202/Raw%20Code) folder into your computer via right-click -> *Save link as*.
 
 ## Scoring Methods 
 
