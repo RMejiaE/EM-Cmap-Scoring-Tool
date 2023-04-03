@@ -1,4 +1,4 @@
-# :file_folder: Phase 1
+# :open_file_folder: Phase 1
 For naming protocol within the code, please refer to the [Naming Protocol](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/blob/main/Phase%201/Naming%20Protocol.md) documentation.
 ## Installing EM Cmap Scoring Tool
 - Please go over and click the [**EM_Cmap_Scoring_Tool_Launcher.zip**](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/blob/main/Phase%201/EM_Cmap_Scoring_Tool_Launcher.zip) at the top of this page, then clik on the *Download* option on the right side of the screen.
