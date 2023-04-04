@@ -12,7 +12,7 @@ For naming protocol within the code, please refer to the [Naming Protocol](https
 - Open the resuting folder after the extraction and double click on the **Cmap_Scoring_Tool_Launcher** application file to run the program (Figure 2).
 - If Windows alerts you because of the application beign unknown, please click on *Run anyway* or *More information* and then *Run anyway*
 
-| <img src="https://user-images.githubusercontent.com/78668372/229847812-d8e15832-8819-401c-af6d-07d6c938bb0a.png" width=50% height=50%> |
+| <img src="https://user-images.githubusercontent.com/78668372/229847812-d8e15832-8819-401c-af6d-07d6c938bb0a.png" width=50% height=60%> |
 | :-: |
 | Figure 3: Protection window |
 
