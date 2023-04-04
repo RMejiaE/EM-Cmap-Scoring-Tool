@@ -25,7 +25,7 @@ Each scoring method was implemented in a different program file to be called by 
 
 Figure 1: Cmap example[1]
 ## Traditional Scoring Method
-This method assigns a score based on the number of concepts (NC), the number of hierarchies (NH), the highest hierarchy (HH), and the number of cross links (NCL)between concepts.
+This method assigns a score based on the number of concepts (NC), the number of hierarchies (NH), the highest hierarchy (HH), and the number of cross links (NCL) between concepts.
 
 As seen in Figure 1, the NC is the ammount of bubbles, the NH are the different paths that leave the root concept, the HH is the hierarchy containing most concepts, and the NCL are the connections between concepts of different hierarchies.
 
