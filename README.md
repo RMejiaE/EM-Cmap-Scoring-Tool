@@ -32,7 +32,7 @@ As seen in Figure 1, the NC is the ammount of bubbles, the NH are the different 
 
 Score = (NC) + 5*(HH) + 10*(NCL)
 ## Categorical Scoring Method
-This method first categorizes the concepts into categories and then identifies the number of concepts (NC) present in the Cmap, then it calculates the number of concepts in each category to finally compute the number of categories (NCAT) that contain at least one concept. After that, it calculates the number of  connections between concepts of different categories, better known as interlinks (NIL). The score is meassure by the level of complexity (CO) of the Cmap.
+This method identifies the number of concepts (NC) present in the Cmap, then classifies the concepts into categories, and lastly, it calculates the number of concepts in each category to finally compute the number of categories (NCAT) that contain at least one concept. After that, it calculates the number of  connections between concepts of different categories, better known as interlinks (NIL). The score is meassure by the level of complexity (CO) of the Cmap.
 
 CO = NC*(NIL/NCAT)
 
