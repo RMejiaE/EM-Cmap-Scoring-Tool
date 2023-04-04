@@ -28,7 +28,10 @@ The number of concepts (NC) is obtained by counting all the concepts, excluding 
 | Figure 4: EM Cmap example with number of concepts (NC) identification. | Figure 5: Number of hierarchies (NH) and highest hierarcy (HH) identification. | Figure 6: Number of crosslinks (NCL) identification. |
 
 Figure 4 shows the number of concepts in the Cmap. After listing them, hierarchies and its concepts are identifyed (Figure 5). The subindex after the dot serves here to illustrate the level of each hierarchy and hence, the longest one. Finally crosslinks are identified (Figure 6).
-For this example, the NC will correspond to 9, NH is 3, the HH will be hierarchy 2, and NCL value corresponds to 1.
+For this example, the NC will correspond to 9, NH is 3, the HH will be hierarchy 2 with 3 levels, and NCL value corresponds to 1.
+
+Score = (NC) + 5*(HH) + 10*(NCL)
+Score = (9) + 5*(3) + 10*(1) = 34
 
 ### Categorical
 The number of concepts (NC) is obtained by counting all the concepts, excluding the root concept, present in the Cmap.The number of categories (NCAT) is obtained by classifying the concepts present into each of the categories and counting the ones that contain at least one concept. For the case of Entrepreneurial Mindset (EM), the cateogries were defined by the [Word Bank](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/blob/main/Phase%202/WordBank.csv) developed by the research team members. Lastly, the number of interlinks (NIL) is obtained by counting the connections between paired concepts that are from different categories.
@@ -39,3 +42,6 @@ The number of concepts (NC) is obtained by counting all the concepts, excluding 
 
 Figure 7 shows the number of concepts in the Cmap. After listing them, they are categorized (Figure 8) and finally interlinks are identified (Figure 9).
 For this example, the NC will correspond to 9, NCAT will be 3, and NIL value corresponds to 2.
+
+CO = NC*(NIL/NCAT)
+CO = 9*(2/3) = 6
