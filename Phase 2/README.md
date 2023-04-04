@@ -27,7 +27,7 @@ The number of concepts (NC) is obtained by counting all the concepts, excluding 
 | :-: | :-: | :-: |
 | Figure 4: EM Cmap example with number of concepts (NC) identification. | Figure 5: Number of hierarchies (NH) and highest hierarcy (HH) identification. | Figure 6: Number of crosslinks (NCL) identification. |
 
-Figure 4 shows the number of concepts in the Cmap. After listing them, hierarchies and its concepts are identifyed (Figure 5). The subindex after the dot serves here to illustrate the level of each hierarchy and hence, the longest one. Finally crosslinks are identified (Figure 6).
+Figure 4 shows an example of a concept map with 9 concepts. After listing them, hierarchies and its concepts are identifyed (Figure 5). The subindex after the dot serves here to illustrate the level of each hierarchy and hence, the longest one. Finally crosslinks are identified (Figure 6).
 For this example, the NC will correspond to 9, NH is 3, the HH will be hierarchy 2 with 3 levels, and NCL value corresponds to 1.
 
 ### Categorical
@@ -37,5 +37,5 @@ The number of concepts (NC) is obtained by counting all the concepts, excluding 
 | :-: | :-: | :-: |
 | Figure 7: EM Cmap example with number of concepts (NC) identification. | Figure 8: Number of categories (NCAT) identification. | Figure 9: Number of interlinks (NIL) identification. |
 
-Figure 7 shows the number of concepts in the Cmap. After listing them, they are categorized (Figure 8) and finally interlinks are identified (Figure 9).
+Figure 7 shows an example of a concept map with 9 concepts. After listing the concepts, they are categorized using a word bank (Figure 8) and finally interlinks are identified (Figure 9).
 For this example, the NC will correspond to 9, NCAT will be 3, and NIL value corresponds to 2.
