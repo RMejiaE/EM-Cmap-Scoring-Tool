@@ -31,6 +31,7 @@ Figure 4 shows the number of concepts in the Cmap. After listing them, hierarchi
 For this example, the NC will correspond to 9, NH is 3, the HH will be hierarchy 2 with 3 levels, and NCL value corresponds to 1.
 
 Score = (NC) + 5*(HH) + 10*(NCL)
+
 Score = (9) + 5*(3) + 10*(1) = 34
 
 ### Categorical
@@ -44,4 +45,5 @@ Figure 7 shows the number of concepts in the Cmap. After listing them, they are 
 For this example, the NC will correspond to 9, NCAT will be 3, and NIL value corresponds to 2.
 
 CO = NC*(NIL/NCAT)
+
 CO = 9*(2/3) = 6
