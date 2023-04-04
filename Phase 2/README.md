@@ -23,7 +23,7 @@ The program receives the Cmap files as a .cxl extention that contains the differ
 ### Traditional
 The number of concepts (NC) is obtained by counting all the concepts, excluding the root concept, present in the Cmap.The number of hierarchies (NH) is obtained by identifying the concepts that are connected directly to the root conept. The highest hierarchy (HH) corresponds to the hierarchy with the longest number of concepts. Lastly, the number of cross links (NCL) is obtained by counting the connections between paired concepts that are from different hierarchies.
 
-| ![imagen](https://user-images.githubusercontent.com/78668372/229618016-94668494-1f69-418b-9535-5520c98fda32.png) | ![imagen](https://user-images.githubusercontent.com/78668372/229618225-0650527c-9952-4f7c-af26-fb7dd75c95c5.png) | ![imagen](https://user-images.githubusercontent.com/78668372/229618261-4721051f-92f2-4f9b-9fdc-54e18428638a.png) |
+| ![imagen](https://user-images.githubusercontent.com/78668372/229846688-053cee04-0534-417b-a71f-7421fccae00b.png) | ![imagen](https://user-images.githubusercontent.com/78668372/229847229-deb70aed-940f-49b2-89c1-6a0e4ce86f47.png)    | ![imagen](https://user-images.githubusercontent.com/78668372/229847398-aec3cc25-ae7f-4eb0-b5ba-2de266ecda3a.png) |
 | :-: | :-: | :-: |
 | Figure 3: EM Cmap example with number of concepts (NC) identification. | Figure 4: Number of hierarchies (NH) and highest hierarcy (HH) identification. | Figure 5: Number of interlinks (NIL) identification. |
 
