@@ -21,13 +21,18 @@ For future developers, the [Raw Code](https://github.com/RMejiaE/EM-Cmap-Scoring
 ## Scoring Methods 
 The program receives the Cmap files as a .cxl extention that contains the different concepts listed and the connections between them. The extraction algorithm takes all the concepts and concepts linked pairs and stores them as two lists to be used for scoring calculation.
 ### Traditional
+Recalling from [Traditional Scoring Method](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool#traditional-scoring-method), the number of concepts (NC) is obtained by counting all the concepts, excluding the root concept, present in the Cmap.The number of hierarchies (NH) is obtained by identifying the concepts that are connected directly to the root conept. The highest hierarchy (HH) corresponds to the hierarchy with the longest number of concepts. Lastly, the number of cross links (NCL) is obtained by counting the connections between paired concepts that are from different hierarchies.
+
+| ![imagen](https://user-images.githubusercontent.com/78668372/229618016-94668494-1f69-418b-9535-5520c98fda32.png) | ![imagen](https://user-images.githubusercontent.com/78668372/229618225-0650527c-9952-4f7c-af26-fb7dd75c95c5.png) | ![imagen](https://user-images.githubusercontent.com/78668372/229618261-4721051f-92f2-4f9b-9fdc-54e18428638a.png) |
+| :-: | :-: | :-: |
+| Figure 3: EM Cmap example with number of concepts (NC) identification. | Figure 4: Number of hierarchies (NH) and highest hierarcy (HH) identification. | Figure 5: Number of interlinks (NIL) identification. |
 
 ### Categorical
 Recalling from [Categorical Scoring Method](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool#categorical-scoring-method), the number of concepts (NC) is obtained by counting all the concepts, excluding the root concept, present in the Cmap.The number of categories (NCAT) is obtained by classifying the concepts present into each of the categories and counting the ones that contain at least one concept. For the case of Entrepreneurial Mindset (EM), the cateogries were defined by the [Word Bank](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/blob/main/Phase%202/WordBank.csv) developed by the research team members. Lastly, the number of interlinks (NIL) is obtained by counting the connections between paired concepts that are from different categories.
 
 | ![imagen](https://user-images.githubusercontent.com/78668372/229618016-94668494-1f69-418b-9535-5520c98fda32.png) | ![imagen](https://user-images.githubusercontent.com/78668372/229618225-0650527c-9952-4f7c-af26-fb7dd75c95c5.png) | ![imagen](https://user-images.githubusercontent.com/78668372/229618261-4721051f-92f2-4f9b-9fdc-54e18428638a.png) |
 | :-: | :-: | :-: |
-| Figure 3: EM Cmap example with number of concepts (NC) identification. | Figure 4: Number of categories (NCAT) identification. | Figure 5: Number of interlinks (NIL) identification. |
+| Figure 6: EM Cmap example with number of concepts (NC) identification. | Figure 7: Number of categories (NCAT) identification. | Figure 8: Number of interlinks (NIL) identification. |
 
-Figure 3 shows the number of concepts in the Cmap. After listing them, they are categorized (Figure 4) and finally interlinks are identified (Figure 5).
+Figure 6 shows the number of concepts in the Cmap. After listing them, they are categorized (Figure 7) and finally interlinks are identified (Figure 8).
 For this example, the NC will correspond to 9, NCAT will be 3, and NIL value corresponds to 2.
