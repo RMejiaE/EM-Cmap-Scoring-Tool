@@ -13,7 +13,7 @@ The objective of [Phase 1](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/
 ### :file_folder:Phase 2
 The objective of [Phase 2](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase%202) was to develop the algorithm for data extraction and the algorithms for identifying the characteristic values for each scoring method (see below [Theoretical Framework](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool#-theoretical-framework)).
 
-The main program (GUI) calls a program file (score_trad or score_cat) according to the scoring method selected by the user. The extracted and clasified information is saved in a .csv file that cab be read with a spreadsheet software tools (sucha as Excel or Google Sheets) or with a plain text reader. Please refer to [Phase 2](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase%202) folder for instructions on how to download and use the EM Cmap Scoring Tool of this second phase.
+The main program (GUI) calls a program file (score_trad or score_cat) according to the scoring method selected by the user. The extracted and classified information is saved in a .csv file that can be read with a spreadsheet software tool (such as Excel or Google Sheets) or with a plain text reader. Please refer to [Phase 2](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase%202) folder for instructions on how to download and use the EM Cmap Scoring Tool of this second phase.
 
 
 ### :file_folder:Phase 3
