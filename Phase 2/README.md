@@ -19,22 +19,15 @@ For naming protocol within the code, please refer to the [Naming Protocol](https
 For future developers, the [Raw Code](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase%202/Raw%20Code) folder contains the originl .py files of this phase. For editing the raw code, please donwload the files on the [Raw Code](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase%202/Raw%20Code) folder into your computer via right-click -> *Save link as*.
 
 ## Scoring Methods 
-
+The program receives the Cmap files as a .cxl extention that contains the different concepts listed and the connections between them. The extraction algorithm takes all the concepts and concepts linked pairs and stores them as two list to be used for scoring calculation.
 ### Traditional
 
 ### Categorical
+Recalling from [Categorical Scoring Method](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool#categorical-scoring-method), the number of concepts (NC) is obtained by counting all the concepts, excluding the root concept, present in the Cmap.The number of categories (NCAT) is obtained by classifying the concepts present into each of the categories and counting the ones that contain at least one concept. For the case of Entrepreneurial Mindset (EM), the cateogries were defined by the [Word Bank](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/blob/main/Phase%202/WordBank.csv) developed by the research team members. Lastly, the number of interlinks (NIL) is obtained by counting the connections between paired concepts that are from different categories.
 
-| <img width="563" alt="Captura de pantalla 2023-03-01 101322" src="https://user-images.githubusercontent.com/78668372/222183073-9f7afbb2-b3eb-47f7-8aef-485e7764fb37.png"> |
-| :-: |
-| Figure 4: EM Cmap Scoring tool GUI |
+| ![imagen](https://user-images.githubusercontent.com/78668372/229618016-94668494-1f69-418b-9535-5520c98fda32.png) | ![imagen](https://user-images.githubusercontent.com/78668372/229618225-0650527c-9952-4f7c-af26-fb7dd75c95c5.png) | ![imagen](https://user-images.githubusercontent.com/78668372/229618261-4721051f-92f2-4f9b-9fdc-54e18428638a.png) |
+| :-: | :-: | :-: |
+| Figure 3: EM Cmap example with number of concepts (NC) identification. | Figure 4: Number of categories (NCAT) identification. | Figure 5: Number of interlinks (NIL) identification. |
 
-Figure 4 shows the GUI, it elements are described below: 
-
-1. Text box to write the root concept.
-2. *Browse* button to select the Cmap files for scoring.
-3. *Browse* button to select the path where scoring report will be saved.
-4. Scoring method selection
-5. *Help* button that opens a window to explain how to prepare the Cmaps files and how to use the Scoring Tool.
-6. *Run* button to execute the scoring.
-
-
+Figure 3 shows the number of concepts in the Cmap. After listing them, they are categorized (Figure 4) and finally interlinks are identified (Figure 5).
+For this example, the NC will correspond to 9, NCAT will be 3, and NIL value corresponds to 2.
