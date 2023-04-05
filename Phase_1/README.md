@@ -37,5 +37,3 @@ Figure 4 shows the GUI, it elements are described below:
 4. Scoring method selection
 5. *Help* button that opens a window to explain how to prepare the Cmaps files and how to use the Scoring Tool.
 6. *Run* button to execute the scoring.
-
-
