@@ -23,7 +23,7 @@ For naming protocol within the code, please refer to the [Naming Protocol](https
 
 For future developers, the [Raw Code](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase_1/Raw%20Code) folder contains the originl .py files of this phase. For editing the raw code, please donwload the files on the [Raw Code](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase_1/Raw%20Code) folder into your computer via right-click -> *Save link as*.
 
-## Graphical User Interface (GUI) 
+## :crystal_ball: Graphical User Interface (GUI) 
 
 | <img width="563" alt="Captura de pantalla 2023-03-01 101322" src="https://user-images.githubusercontent.com/78668372/222183073-9f7afbb2-b3eb-47f7-8aef-485e7764fb37.png"> |
 | :-: |
