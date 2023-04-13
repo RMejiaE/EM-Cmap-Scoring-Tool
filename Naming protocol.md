@@ -5,7 +5,7 @@ The following document describes the rules for naming variables and functions, a
 -	All variables will be listed at the top of the program file, after the imports.
 -	Instances will be listed at the top, after variables.
 -	Functions prototypes will be listed at the top, after instances.
-## Variables and Functions:
+## :large_orange_diamond: Variables and Functions:
 Variables will follow the template presented below following table 1 rules:
 
 *vScopeType_name*
@@ -36,7 +36,7 @@ Functions will follow the template presented below:
 
 **e.g., fLoc_inputfiles()**
 
-## Instances and Objects
+## :large_blue_diamond: Instances and Objects
 Instances will follow the template presented below:
 
 *iClass_name*
