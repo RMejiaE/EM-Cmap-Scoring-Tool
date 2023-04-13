@@ -1,4 +1,4 @@
-# :bridge_at_night:Structure of the WordBank
+# :bridge_at_night:WordBank Structure
 
 The new structure of the WordBank was defined by rows. Each category or subcategory with the words that belongs to it must occupy one single row (Figure 9). This row structure was defined because the programming libraries manage data in files as natural language does, from left to right. 
 
