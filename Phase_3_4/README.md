@@ -29,7 +29,7 @@ The updated version can be seen in [Wordbank](https://github.com/RMejiaE/EM-Cmap
 ## 🔮 Manual Categorization Graphical User Interface (GUI)
 The manual categorization GUI presents the user the information of the concepts that did not have any category becuase they are not present in the [Wordbank](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/blob/main/Phase_3_4/WordBank.csv) file. In this interface, the concepts are presented in the first column, the pre assigned category based on the implemented algorithm, and a dropdown menu. The drop down menu is set by default to the pre assigned category, but the user can choose another category if they find it more appropriate.
 
-| ![imagen](https://user-images.githubusercontent.com/78668372/239608086-5f552523-32ec-4c0c-8c35-85ca7c3b10aa.png) |
+| <img src="https://user-images.githubusercontent.com/78668372/239608086-5f552523-32ec-4c0c-8c35-85ca7c3b10aa.png" width=60% height=60%> |
 | :-: |
 | Figure 4: Manual categrization GUI. |
 
