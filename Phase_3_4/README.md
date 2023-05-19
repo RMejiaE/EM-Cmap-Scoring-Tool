@@ -21,7 +21,7 @@ For naming protocol within the code, please refer to the [Naming Protocol](https
 | :-: |
 | Figure 3: Protection window |
 
-For future developers, the [Raw Code](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase_3_4/Raw%20code) folder contains the originl .py files of this phase. For editing the raw code, please donwload the files on the [Raw Code](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase_3_4/Raw%20Code) folder into your computer via right-click -> *Save link as*.
+For future developers, the [Raw Code](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase_3_4/Raw%20code) folder contains the originl .py files of this phase. For editing the raw code, please donwload the files on the [Raw Code](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase_3_4/Raw%20code) folder into your computer via right-click -> *Save link as*.
 
 ## :bar_chart: Scoring Methods 
 The program receives the Cmap files as a .cxl extention that contains the different concepts listed and the connections between them. The extraction algorithm takes all the concepts and concepts linked pairs and stores them as two lists to be used for scoring calculation.
