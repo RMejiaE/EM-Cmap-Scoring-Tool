@@ -23,8 +23,9 @@ For naming protocol within the code, please refer to the [Naming Protocol](https
 
 For future developers, the [Raw Code](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase_3_4/Raw%20code) folder contains the originl .py files of this phase. For editing the raw code, please donwload the files on the [Raw Code](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase_3_4/Raw%20code) folder into your computer via right-click -> *Save link as*.
 
-## :bar_chart: Scoring Methods 
-The program receives the Cmap files as a .cxl extention that contains the different concepts listed and the connections between them. The extraction algorithm takes all the concepts and concepts linked pairs and stores them as two lists to be used for scoring calculation.
+## :bar_chart: Wordbank update
+The Wordbank file was updated to have only one concept per cell for the test performed.
+The updated version can be seen in [Wordbank](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/blob/main/Phase_3_4/WordBank.csv) under this phase folder.
 ### Traditional
 The number of concepts (NC) is obtained by counting all the concepts, excluding the root concept, present in the Cmap. The number of hierarchies (NH) is obtained by identifying the concepts that are connected directly to the root conept. The highest hierarchy (HH) corresponds to the hierarchy with the longest level. Lastly, the number of cross links (NCL) is obtained by counting the connections between paired concepts that are from different hierarchies.
 
