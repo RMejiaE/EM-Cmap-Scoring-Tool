@@ -23,25 +23,18 @@ For naming protocol within the code, please refer to the [Naming Protocol](https
 
 For future developers, the [Raw Code](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase_3_4/Raw%20code) folder contains the originl .py files of this phase. For editing the raw code, please donwload the files on the [Raw Code](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase_3_4/Raw%20code) folder into your computer via right-click -> *Save link as*.
 
-## :bar_chart: Wordbank update
+## 📋 Wordbank update
 The Wordbank file was updated to have only one concept per cell for the test performed.
 The updated version can be seen in [Wordbank](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/blob/main/Phase_3_4/WordBank.csv) under this phase folder.
-### Traditional
-The number of concepts (NC) is obtained by counting all the concepts, excluding the root concept, present in the Cmap. The number of hierarchies (NH) is obtained by identifying the concepts that are connected directly to the root conept. The highest hierarchy (HH) corresponds to the hierarchy with the longest level. Lastly, the number of cross links (NCL) is obtained by counting the connections between paired concepts that are from different hierarchies.
+## 🔮 Manual Categorization Graphical User Interface (GUI)
+The manual categorization GUI presents the user the information of the concepts that did not have any category becuase they are not present in the [Wordbank](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/blob/main/Phase_3_4/WordBank.csv) file. In this interface, the concepts are presented in the first column, the pre assigned category based on the implemented algorithm, and a dropdown menu. The drop down menu is set by default to the pre assigned category, but the user can choose another category if they find it more appropriate.
 
-| ![imagen](https://user-images.githubusercontent.com/78668372/229846688-053cee04-0534-417b-a71f-7421fccae00b.png) | ![imagen](https://user-images.githubusercontent.com/78668372/229847229-deb70aed-940f-49b2-89c1-6a0e4ce86f47.png)    | ![imagen](https://user-images.githubusercontent.com/78668372/229847398-aec3cc25-ae7f-4eb0-b5ba-2de266ecda3a.png) |
-| :-: | :-: | :-: |
-| Figure 4: EM Cmap example with number of concepts (NC) identification. | Figure 5: Number of hierarchies (NH) and highest hierarcy (HH) identification. | Figure 6: Number of crosslinks (NCL) identification. |
+| ![imagen](https://user-images.githubusercontent.com/78668372/239608086-5f552523-32ec-4c0c-8c35-85ca7c3b10aa.png) |
+| :-: |
+| Figure 4: Manual categrization GUI. |
 
-Figure 4 shows an example of a concept map with 9 concepts. After listing them, hierarchies and its concepts are identifyed (Figure 5). The subindex after the dot serves here to illustrate the level of each hierarchy and hence, the longest one. Finally crosslinks are identified (Figure 6).
-For this example, the NC will correspond to 9, NH is 3, the HH will be hierarchy 2 with 3 levels, and NCL value corresponds to 1.
+The options for the manual categorization GUI are *Accept all assignement* and *Reject all assignements and leave all concepts in "No category"*.
+- If the user would like to leave the concepts in the pre assigned categories or manually select a category for one or more concepts, the *Actions* menu should be left in *Accept all assignements*. For a  manual selection, the user must choose the desired category from the dropdown menu for the categories that they want to change and finally click on *Continue*.
+- If the user would like to leave the concepts in *"No category"*, the *Actions* menu should be switched to *Reject all assignements and leave all concepts in "No category"*. Finally, the user must click on *Continue*
 
-### Categorical
-The number of concepts (NC) is obtained by counting all the concepts, excluding the root concept, present in the Cmap. The number of categories (NCAT) is obtained by classifying the concepts present into each of the categories and counting the ones that contain at least one concept. For the case of Entrepreneurial Mindset (EM), the cateogries were defined by the [Word Bank](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/blob/main/Phase_2/WordBank.csv) developed by the research team members. Lastly, the number of interlinks (NIL) is obtained by counting the connections between paired concepts that are from different categories.
-
-| ![imagen](https://user-images.githubusercontent.com/78668372/229618016-94668494-1f69-418b-9535-5520c98fda32.png) | ![imagen](https://user-images.githubusercontent.com/78668372/229618225-0650527c-9952-4f7c-af26-fb7dd75c95c5.png) | ![imagen](https://user-images.githubusercontent.com/78668372/229618261-4721051f-92f2-4f9b-9fdc-54e18428638a.png) |
-| :-: | :-: | :-: |
-| Figure 7: EM Cmap example with number of concepts (NC) identification. | Figure 8: Number of categories (NCAT) identification. | Figure 9: Number of interlinks (NIL) identification. |
-
-Figure 7 shows an example of a concept map with 9 concepts. After listing the concepts, they are categorized using a word bank (Figure 8) and finally interlinks are identified (Figure 9).
-For this example, the NC will correspond to 9, NCAT will be 3, and NIL value corresponds to 2.
+After clicking *Continue*, the progrma will either present the next Cmap for manual categorization selection or and the execution and present the message window indicating that the categorical scoring was performed succesfully.
