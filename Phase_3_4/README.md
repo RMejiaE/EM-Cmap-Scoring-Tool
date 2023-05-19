@@ -37,4 +37,4 @@ The options for the manual categorization GUI are *Accept all assignement* and *
 - If the user would like to leave the concepts in the pre assigned categories or manually select a category for one or more concepts, the *Actions* menu should be left in *Accept all assignements*. For a  manual selection, the user must choose the desired category from the dropdown menu for the categories that they want to change and finally click on *Continue*.
 - If the user would like to leave the concepts in *"No category"*, the *Actions* menu should be switched to *Reject all assignements and leave all concepts in "No category"*. Finally, the user must click on *Continue*
 
-After clicking *Continue*, the progrma will either present the next Cmap for manual categorization selection or and the execution and present the message window indicating that the categorical scoring was performed succesfully.
+After clicking *Continue*, the program will either present the next Cmap for manual categorization or end the execution, and present the message window indicating that the categorical scoring was performed succesfully.
