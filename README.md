@@ -17,6 +17,8 @@ The main program (GUI) calls a program file (score_trad or score_cat) according 
 
 
 ### :file_folder:Phase 3 & 4
+The objective of 
+
 ### :file_folder:Phase 5
 
 
