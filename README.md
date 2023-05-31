@@ -16,8 +16,7 @@ The objective of [Phase 2](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/
 The main program (GUI) calls a program file (score_trad or score_cat) according to the scoring method selected by the user. The extracted and classified information is saved in a .csv file that can be read with a spreadsheet software tool (such as Excel or Google Sheets) or with a plain text reader. Please refer to [Phase 2](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase_2) folder for instructions on how to download and use the EM Cmap Scoring Tool of this second phase.
 
 
-### :file_folder:Phase 3
-### :file_folder:Phase 4
+### :file_folder:Phase 3 & 4
 ### :file_folder:Phase 5
 
 
