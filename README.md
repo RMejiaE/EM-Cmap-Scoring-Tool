@@ -17,7 +17,10 @@ The main program (GUI) calls a program file (score_trad or score_cat) according 
 
 
 ### :file_folder:Phase 3 & 4
-The objective of 
+The objective of [Phase 3 & 4](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase_3_4) was to develop the Graphical User Interface (GUI) to allow the user for manual categorization of the concepts that were not found in the Wordbank after the categorical method was run.
+
+The Manual categorization GUI appears for every file that was uploaded to be scored and allows the user to view the preassigned category, change it, or reject all assignations and leave the concepts under "No category". Please refer to [Phase 3 & 4](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase_3_4) folder for instructions on how to download and use the EM Cmap Scoring Tool of these phases.
+
 
 ### :file_folder:Phase 5
 
