@@ -23,7 +23,7 @@ For naming protocol within the code, please refer to the [Naming Protocol](https
 
 For future developers, the [Raw Code](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase_5/Raw%20code) folder contains the originl .py files of this phase. For editing the raw code, please donwload the files on the [Raw Code](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase_5/Raw%20code) folder into your computer via right-click -> *Save link as*.
 
-## 🔮: Manual Categorization GUI Update
+## 🔮 Manual Categorization GUI Update
 Additional elements were added to the program that help the user to identify the categories and subcategories in the Manual Categorization GUI. 
 
 Categories were left in the same level and subcategories are presented with a tab and a '-' at the start, as can be seen in Figure 4.
@@ -31,3 +31,10 @@ Categories were left in the same level and subcategories are presented with a ta
 | ![imagen](https://user-images.githubusercontent.com/78668372/245650502-b4fe9877-406d-4909-8f53-5d93dfcc1b3f.png) |
 | :-: |
 | Figure 4: Manual Categorization GUI dropdown menu update |
+
+## 📔 Codebook
+A new button was added to present the user with the Codebook used for the manual categorical scoring assessmet. It presents the descriptions of each category and subcategory.
+
+| ![imagen](https://user-images.githubusercontent.com/78668372/245651333-1d85aebc-c658-4ef8-b2c7-63a9037726f5.png) |
+| :-: |
+| Figure 5: Codebook button in the main GUI |
