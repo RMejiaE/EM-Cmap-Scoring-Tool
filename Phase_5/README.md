@@ -9,7 +9,7 @@ For naming protocol within the code, please refer to the [Naming Protocol](https
 | :-: |
 | Figure 1: .zip extraction procedure |
 
-- Open the resuting folder after the extraction and double click on the **Cmap_Scoring_Tool_Launcher** application file to run the program (Figure 2).
+- Open the resulting folder after the extraction and double click on the **Cmap_Scoring_Tool_Launcher** application file to run the program (Figure 2).
 
 | ![imagen](https://user-images.githubusercontent.com/78668372/230093790-764e3e18-1c3c-4f5b-88ff-1b8e95e21c47.png) |
 | :-: |
