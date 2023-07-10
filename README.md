@@ -23,7 +23,9 @@ The Manual categorization GUI appears for every file that was uploaded to be sco
 
 
 ### :file_folder:Phase 5
+The objective of [Phase 5](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase_5) was to update the manual cateogrization GUI to present the user with the main categories and subcategories in the dropdown menu, as well as including a button to give the user access to the codebook used for the categoricla scoring assessment done by hand.
 
+The updated manual categorization GUI dropdown menu presents the categories with its associate subcategories below, preceded by a '-' character.
 
 # 📚 Theoretical Framework
 ![imagen](https://user-images.githubusercontent.com/78668372/222168066-8f58282b-3591-43e3-a3ed-1d50a78556a4.png)
