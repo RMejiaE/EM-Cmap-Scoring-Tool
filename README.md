@@ -23,9 +23,21 @@ The Manual categorization GUI appears for every file that was uploaded to be sco
 
 
 ### :file_folder:Phase 5
-The objective of [Phase 5](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase_5) was to update the manual cateogrization GUI to present the user with the main categories and subcategories in the dropdown menu, as well as including a button to give the user access to the codebook used for the categoricla scoring assessment done by hand.
+The objectives of [Phase 5](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/tree/main/Phase_5) expanded on the original requirements to include the following additional needs:
 
-The updated manual categorization GUI dropdown menu presents the categories with its associate subcategories below, preceded by a '-' character.
+- Main GUI
+  - Button to access a PDF with the codebook
+- Traditional Scoring Method
+  - List of concepts in the Results Report.
+  - Summary table of metrics for all the concept maps scored.
+- Categorical Scoring Method
+  - Change the visualization of subcategories in the scrolling menu at the manual categorization GUI to differentiate them from the main categories.
+  - Change the visualization of subcategories in the Results report to differentiate them from the main categories.
+  - Number of subcategories and categories that have concepts in them in the Results report.
+  - Cross table with the number of interlinks between categories in the Results Report.
+  - Summary table of metrics for all the concept maps scored.
+  - CSV file with the manual categorization of the concepts not found in the Wordbank.
+  - Instructions on how to change the Wordbank file and Codebook file.
 
 # 📚 Theoretical Framework
 ![imagen](https://user-images.githubusercontent.com/78668372/222168066-8f58282b-3591-43e3-a3ed-1d50a78556a4.png)
