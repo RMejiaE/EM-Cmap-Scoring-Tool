@@ -1,3 +1,7 @@
+#----------------------------------
+#   Developed by:
+#   @mcangrejo & @RMejiaE in GitHub
+#----------------------------------
 import os
 import tkinter as tk
 from tkinter import ttk
@@ -15,11 +19,14 @@ vGloD_categories = {}
 vExtD_wordbank = {}
 vGloD_nocategory = {}
 vGloD_wordbankcatids = {}  #the keys of the dict are the names of the categories/subactegories, the values are the number of the main category
+vGloI_numofcats = 0
+vGloM_intercategories = []
 
 #externals
 vExtS_rootconcept="Entrepreneurial Mindset"  #String with the root concept, it's changed in the Run button function
 vExtL_inputfiles=[]  #List for the concept map files to be scored, it's changed in the Files button function
-vExtS_outputfile=''  #String with the path and name of the output file, it's changed in the Save button function
+vExtS_outputfile=''  #String with the path and name of the output file, it's changed in fLoc_outputfile
+vExtS_reportfile=''  #String with the path and name of the report file, it's changed in fLoc_outputfile
 
 
 #___________Widgets instance definitions (Except buttons)______#
@@ -87,6 +94,7 @@ def fLoc_inputfiles():
 
 def fLoc_outputfile():
     global vExtS_outputfile
+    global vExtS_reportfile
 
     filetypesOut = (
         ('csv files', '*.csv'),
@@ -103,6 +111,7 @@ def fLoc_outputfile():
 
     if len(vLocS_outputfile)>0:
         vExtS_outputfile=vLocS_outputfile
+        vExtS_reportfile=os.path.splitext(os.path.basename(vLocS_outputfile))[0] + '_manReport.csv'
         iEntry_outputfile.config(state = 'enabled')
         iEntry_outputfile.delete(0, 'end')
         iEntry_outputfile.insert(0,vExtS_outputfile)
@@ -132,7 +141,7 @@ def fLoc_detailedhelp():
 
 #fLoc_codebook opens the .odf file with the categories descriptions
 def fLoc_codebook():
-    webbrowser.open_new('Codebook description table.pdf')
+    webbrowser.open_new('Codebook.pdf')
     
 #_____________regular functions _____________#
 
@@ -348,9 +357,10 @@ def fLoc_mancatGUI(vLocS_archivo):
         if len(vGloD_nocategory.get(category)) != 0:
             for concept in vGloD_nocategory.get(category):
                 vLocL_assignedcat.append(category)
-                ttk.Label(iFrame_columns, text = category).grid(column = 1, row = pos, padx = 5, pady = 5, sticky = tk.N)
-                ttk.Label(iFrame_columns, text = concept).grid(column = 0, row = pos, padx = 5, pady = 5, sticky = tk.N)
                 vLocL_concepts.append(concept)
+                ttk.Label(iFrame_columns, text = concept).grid(column = 0, row = pos, padx = 5, pady = 5, sticky = tk.N)
+                ttk.Label(iFrame_columns, text = category).grid(column = 1, row = pos, padx = 5, pady = 5, sticky = tk.N)
+                                
                 vLocL_category.append( tk.StringVar(iFrame_columns) )
                 vLocL_category[pos - 1].set( category )
                 ttk.OptionMenu(iFrame_columns, vLocL_category[pos - 1], category, *vLocL_categories).grid(column = 2, row = pos, sticky = tk.N)
@@ -358,7 +368,7 @@ def fLoc_mancatGUI(vLocS_archivo):
 
     
     iTk_main.wait_window(iToplevel_mancat)
-    ###
+    #
     if iString_action.get() == '1':
         for index, concept in enumerate(vLocL_concepts):
             valueslist = []
@@ -373,19 +383,6 @@ def fLoc_mancatGUI(vLocS_archivo):
             vGloD_nocategory.get('No category').append( concept )
     
     
-##    if iString_action.get() == '1':
-##        for index, concept in enumerate(vLocL_concepts):
-##            valueslist = []
-##            if vLocL_category[index] != 'No category':
-##                vGloD_categories.get(vLocL_category[index].get()).append( concept )
-##                vGloD_categories.get('No category').remove( concept )
-##            vGloD_nocategory.get(vLocL_assignedcat[index]).remove( concept )
-##            vGloD_nocategory.get(vLocL_category[index].get()).append( concept )
-##    elif iString_action.get() == '2':
-##        for index, concept in enumerate(vLocL_concepts):
-##            vGloD_nocategory.get(vLocL_assignedcat[index]).remove( concept )
-##            vGloD_nocategory.get('No category').append( concept )
-    ###
     
 #fExt_catscoring handles the categorical scoring. It used to be an external function but then the mancatGUI couldn't work. We move it to this file        
 def fExt_catscoring(vExtS_rootconcept,vExtL_inputfiles,vExtS_outputfile):
@@ -414,6 +411,13 @@ def fExt_catscoring(vExtS_rootconcept,vExtL_inputfiles,vExtS_outputfile):
     vLocI_interlinks = 0
     vLocF_catscore = 0.0
 
+    vLocD_summary = {}
+    global vGloM_intercategories
+    vLocI_countintercat = 0
+    
+    global vGloI_numofcats
+    vLocL_tempcolumns = []           
+
     #___________Extraction of the WordBank information____#
     try:
         with open('WordBank.csv', 'r') as file:
@@ -428,14 +432,16 @@ def fExt_catscoring(vExtS_rootconcept,vExtL_inputfiles,vExtS_outputfile):
     except:
         return -2
 
+    vGloI_numofcats = 0
     for category in vExtD_wordbank:
         #Adds categories to the wordbancatids. Value are the category and subcategory's numbers
         vGloD_wordbankcatids.update({category[2] : [category [0], category [1]]})
+        if category[0] == category[1]:
+            vGloI_numofcats += 1
+        
         
     
-        
-    
-    #__________Opens or creates the result .csv file and writes the headers_________#
+    #__________Opens or creates the result .csv file and writes headers_________#
 
     try:
         csvfile=open(vExtS_outputfile,'w', newline='')
@@ -447,6 +453,17 @@ def fExt_catscoring(vExtS_rootconcept,vExtL_inputfiles,vExtS_outputfile):
     oLoc_outputfile.writerow(vLocL_mainheader)
     oLoc_outputfile.writerow(vLocL_maindata)
 
+#__________Opens or creates the manual categorisation report .csv _________#
+
+    try:
+        csvreport=open(vExtS_reportfile,'w', newline='')
+    except:
+        return -1
+
+        
+    oLoc_reportfile=csv.writer(csvreport,delimiter=',',quoting=csv.QUOTE_MINIMAL)
+    oLoc_reportfile.writerow(["Categorisation report of concepts not found in the Wordbank file"])
+    
     #________________Extraction of all file names__________#
     
     for file in vExtL_inputfiles:
@@ -455,7 +472,6 @@ def fExt_catscoring(vExtS_rootconcept,vExtL_inputfiles,vExtS_outputfile):
     #_________Iterates over each cmap file and does the scoring____________________#
     
     for index, cmapfile in enumerate(vExtL_inputfiles):
-
         #opens the cmap file
         oGlo_cmapfile = open(cmapfile)
 
@@ -490,6 +506,15 @@ def fExt_catscoring(vExtS_rootconcept,vExtL_inputfiles,vExtS_outputfile):
             oLoc_outputfile.writerow([vExtS_rootconcept + ' is not a concept in the map'])
             continue
         else:
+            #Matrix initiatization for intercategories
+            for i in range(vGloI_numofcats):
+                vGloM_intercategories.append([])
+                for j in range(vGloI_numofcats):
+                    if i == j:
+                        vGloM_intercategories[i].insert(j, 'x')
+                    else:
+                        vGloM_intercategories[i].insert(j, 0)
+
             #classifying each concept in each category
             for category in vExtD_wordbank:
                 for concept in vGloL_concepts:
@@ -550,6 +575,11 @@ def fExt_catscoring(vExtS_rootconcept,vExtL_inputfiles,vExtS_outputfile):
             # The number of main categories with concepts is the length of vLocL_NCAT
             vLocI_NCAT=len(vLocL_NCAT)
            
+            #Writing file name and headers to the report file
+            oLoc_reportfile.writerow([''])
+            oLoc_reportfile.writerow(['Filename', vLocL_inputnames[index]])
+            oLoc_reportfile.writerow(['Approved category:', 'Concepts not found in the wordbank:'])
+
             # Writing headers into the .csv file
             oLoc_outputfile.writerow(['Categories:', 'Concepts per category:', 'Number of concepts per category:'])
 
@@ -559,18 +589,28 @@ def fExt_catscoring(vExtS_rootconcept,vExtL_inputfiles,vExtS_outputfile):
             for category in vGloD_wordbankcatids:           
                 if vGloD_wordbankcatids[category][0] == vGloD_wordbankcatids[category][1]:
                     oLoc_outputfile.writerow([category ,str(vGloD_categories.get(category)).replace(',', ' '), len(vGloD_categories.get(category))])
+                    #manual ctaegorisation report
+                    oLoc_reportfile.writerow([category ,str(vGloD_nocategory.get(category)).replace(',', ' ')])
+                    
                 else:
                     oLoc_outputfile.writerow(['  -' +category ,str(vGloD_categories.get(category)).replace(',', ' '), len(vGloD_categories.get(category))])
+                    #manual ctaegorisation report
+                    oLoc_reportfile.writerow(['  -' +category ,str(vGloD_nocategory.get(category)).replace(',', ' ')])
+                    
                 if len(vGloD_categories.get(category)):
                     vLocI_numcat += 1                         #Number of categories/subcategories with a concept
                     vLocI_numconcepts += len(vGloD_categories.get(category))
-            #Saving in the .csv the No category concepts list.
+
+            #Saving in the results and categorisation report.csv the No category concepts list.
             oLoc_outputfile.writerow(['No category' ,str(vGloD_categories.get('No category')).replace(',', ' '), len(vGloD_categories.get('No category'))])
+            oLoc_reportfile.writerow(['No category' ,str(vGloD_categories.get('No category')).replace(',', ' ')])
+
             #Counting the number of interlinks
             vLocI_interlinks = 0
             for i in vLocM_conceptsid:
                 if (i[0].isnumeric() and i[1].isnumeric()) and (i[0] != i[1]):
                     vLocI_interlinks += 1
+                    vGloM_intercategories[int(i[0]) - 1][int(i[1]) - 1] += 1
 
             #Save information to the csv file
             oLoc_outputfile.writerow(['Total number of concepts:', vLocI_numconcepts + len(vGloD_categories.get('No category'))])
@@ -583,7 +623,36 @@ def fExt_catscoring(vExtS_rootconcept,vExtL_inputfiles,vExtS_outputfile):
             if vLocI_numcat > 0:
                 vLocF_catscore = (vLocI_numconcepts)*((vLocI_interlinks) / (vLocI_NCAT))
             oLoc_outputfile.writerow(['Categorical Scoring:', round(vLocF_catscore, 1), 'NC*(NIL/NCAT)'])
+
+            #Saves filename and metrics for each file.
+            vLocD_summary.update( {vLocL_inputnames[index] : [vLocI_numconcepts, vLocI_NCAT, vLocI_interlinks, round(vLocF_catscore, 1)] } )
+            
+            #Writes intercategories matrix
+            vLocL_tempcolumns = []
+            for cat in vExtD_wordbank:
+                if cat[0] == cat[1]:
+                    vLocL_tempcolumns.append(cat[2])
+            oLoc_outputfile.writerow([' '])
+            vLocL_tempcolumns.insert(0, ' ')
+            oLoc_outputfile.writerows([vLocL_tempcolumns])
+            vLocL_tempcolumns.pop(0)
+
+            for pos, row in enumerate(vGloM_intercategories):
+                vGloM_intercategories[pos].insert(0, vLocL_tempcolumns[pos])
+                oLoc_outputfile.writerows([vGloM_intercategories[pos]])
+            #Clears intercategories matrix
+            vGloM_intercategories = []
+
+    #Writes summary information in the csv file.
+    vLocD_summary
+    oLoc_outputfile.writerow([''])
+    oLoc_outputfile.writerow(['Scoring Table Summary:'])
+    oLoc_outputfile.writerow(['Filename', 'NC', 'CAT', 'NIL', 'Score'])
+    for file in vLocD_summary:
+        oLoc_outputfile.writerow([file, vLocD_summary.get(file)[0], vLocD_summary.get(file)[1], vLocD_summary.get(file)[2], vLocD_summary.get(file)[3]])
+
     csvfile.close()
+    csvreport.close()
     return 0
 
 #___________Run button method_______________#
@@ -617,7 +686,7 @@ def fLoc_run():
 
             temp = fExt_catscoring(vExtS_rootconcept,vExtL_inputfiles,vExtS_outputfile)
             if temp == -1:
-                showerror(title = 'Error message:', message = 'Please close the output file.\n')
+                showerror(title = 'Error message:', message = 'Please close result output file or manual categorisation report file.\n')
             elif temp == -2:
                 showerror(title = 'Error message:', message = 'WordBank file not found.\n')
             else:
@@ -630,7 +699,7 @@ def fLoc_run():
     iButton_run.config(state = 'enabled')
     iButton_inputfiles.config(state = 'enabled')
     iButton_outputfile.config(state = 'enabled')
-        
+
 #____________Buttons definitions_______________#
 
 #main buttons
@@ -654,7 +723,7 @@ iTk_main.resizable(0,0) #Not resizable
 #help window
 iToplevel_help = tk.Toplevel(iTk_main) #Help window
 iToplevel_help.title('Help')
-iToplevel_help.geometry('630x300+320+300')
+iToplevel_help.geometry('630x320+320+300')
 iToplevel_help.resizable(0,0)
 iToplevel_help.withdraw()
 

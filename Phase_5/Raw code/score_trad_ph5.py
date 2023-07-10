@@ -1,3 +1,7 @@
+#----------------------------------
+#   Developed by:
+#   @mcangrejo & @RMejiaE in GitHub
+#----------------------------------
 import re
 import csv
 import os
@@ -86,6 +90,8 @@ def fExt_tradscoring(vExtS_rootconcept,vExtL_inputfiles,vExtS_outputfile):
     vLocI_highesthier=0
     vLocI_numcrosslinks=0
     vLocI_score=0
+    ###
+    vLocD_summary = {}
 
     #________________Extraction of all file names__________#
     for file in vExtL_inputfiles:
@@ -196,11 +202,17 @@ def fExt_tradscoring(vExtS_rootconcept,vExtL_inputfiles,vExtS_outputfile):
             #Score = (NC) + (HH)*5 + (NCL)*10
         
             vLocI_score=vLocI_numconcepts + vLocI_highesthier*5 + vLocI_numcrosslinks*10
+
+            ###
+            #Saves filename and score for sumary repotr table.
+            vLocD_summary.update( {vLocL_inputnames[index] : [vLocI_numconcepts, vLocI_highesthier, vLocI_numcrosslinks, vLocI_score] } )
                        
             #writes the file name
             oLoc_outputfile.writerow([''])
             oLoc_outputfile.writerow(['Filename', vLocL_inputnames[index]])
             oLoc_outputfile.writerow(['# of concepts', vLocI_numconcepts])
+            vGloL_concepts.pop( vGloL_concepts.index(vExtS_rootconcept.lower()) )
+            oLoc_outputfile.writerow(['List of concepts', str(vGloL_concepts).replace(',', ' ')])
             oLoc_outputfile.writerow(['Hierachies', vLocL_hierarchies])
             oLoc_outputfile.writerow(['# of hierarchies', vLocI_numhierarchies])
             oLoc_outputfile.writerow(['Highest hierarchy', vLocI_highesthier])
@@ -214,5 +226,12 @@ def fExt_tradscoring(vExtS_rootconcept,vExtL_inputfiles,vExtS_outputfile):
             oLoc_outputfile.writerow(['Filename', vLocL_inputnames[index],'Incorrect file extension'])
                      
             continue
+    #Writes summary information in the csv file.
+    oLoc_outputfile.writerow([''])
+    oLoc_outputfile.writerow(['Scoring Table Summary:'])
+    oLoc_outputfile.writerow(['Filename', 'NC', 'HH', 'NCL', 'Score'])
+    for file in vLocD_summary:
+        oLoc_outputfile.writerow([file, vLocD_summary.get(file)[0], vLocD_summary.get(file)[1], vLocD_summary.get(file)[2], vLocD_summary.get(file)[3]])
+
         
     csvfile.close()
